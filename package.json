@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "jest src/*.test.js",
-    "lint": "eslint \"**/*.js\" \"**/*.ts\" \"**/*.json\""
+    "lint": "eslint \"**/*.js\" \"**/*.json\""
   },
   "repository": {
     "type": "git",
@@ -35,6 +35,6 @@
     }
   },
   "lint-staged": {
-    "*": "npm run lint -- --fix"
+    "*.js(on)": "npm run lint -- --fix"
   }
 }
